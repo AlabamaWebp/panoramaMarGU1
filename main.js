@@ -1,7 +1,9 @@
 const museiTitle = "Зоологический музей";
 const draggable = true;
 const hfov = 110;
-const compass = false;
+const compass = true;
+// const path = "/assets/"  
+const path = "/panoramaMarGU1/assets/" 
 pannellum.viewer('panorama', {   
     "default": {
         "firstScene": "musei4",
@@ -10,6 +12,7 @@ pannellum.viewer('panorama', {
         "autoLoad": true,
         "draggable": draggable,
         "compass": compass,
+        // "dynamic": true,
     },
 
     "scenes": {
@@ -19,7 +22,7 @@ pannellum.viewer('panorama', {
             "pitch": -3,
             "yaw": 0,
             "type": "equirectangular",
-            "panorama": "/assets/coridor1.jpg",
+            "panorama": path + "coridor1.jpg",
             "hotSpots": [
                 {
                     "pitch": -2.1,
@@ -37,7 +40,7 @@ pannellum.viewer('panorama', {
             "pitch": -10,
             "yaw": -110,
             "type": "equirectangular",
-            "panorama": "/assets/musei2.jpg",
+            "panorama": path + "musei2.jpg",
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -61,7 +64,7 @@ pannellum.viewer('panorama', {
             "pitch": -10,
             "yaw": -110,
             "type": "equirectangular",
-            "panorama": "/assets/musei3.jpg",
+            "panorama": path + "musei3.jpg",
             "hotSpots": [
                 {
                     "pitch": -25,
@@ -85,7 +88,7 @@ pannellum.viewer('panorama', {
             "pitch": -10,
             "yaw": -110,
             "type": "equirectangular",
-            "panorama": "/assets/musei4.jpg",
+            "panorama": path + "musei4.jpg",
             "hotSpots": [
                 {
                     "pitch": -25,
@@ -109,13 +112,14 @@ pannellum.viewer('panorama', {
             "pitch": -10,
             "yaw": -110,
             "type": "equirectangular",
-            "panorama": "/assets/musei5.jpg",
+            "panorama": path + "musei5.jpg",
             "hotSpots": [
                 {
                     "pitch": -25,
                     "yaw": 85,
                     "type": "scene",
                     // "text": "",
+                    "targetYaw": 110, 
                     "sceneId": "musei3",
                 },
                 {
