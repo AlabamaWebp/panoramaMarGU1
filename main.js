@@ -12,7 +12,8 @@ pannellum.viewer('panorama', {
         "autoLoad": true,
         "draggable": draggable,
         "compass": compass,
-        // "dynamic": true,
+
+        "hotSpotDebug": true
     },
 
     "scenes": {
@@ -126,8 +127,8 @@ pannellum.viewer('panorama', {
                     "sceneId": "musei3",
                 },
                 {
-                    "pitch": -10,
-                    "yaw": 190,
+                    "pitch": -40,
+                    "yaw": -93,
                     "type": "scene",
                     // "text": "",
                     "sceneId": "musei5",
